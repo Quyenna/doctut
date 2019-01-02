@@ -1,9 +1,9 @@
 Spark & HDFS install note 
 =========================
 xx.xx.7.19: HDFS Namenode, Spark Master
-=======================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 xx.xx.7.20-21: HDFS Datanode, Spark Worker
-==========================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Bước 1: Tạo thư mục chứa các bộ cài đặt Spark, Hadoop, Conda, thay đổi quyền trong thư mục cho user bigdata: ::
 

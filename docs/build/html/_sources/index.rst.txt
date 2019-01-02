@@ -1,7 +1,9 @@
 Spark & HDFS install note 
-10.22.7.19: HDFS Namenode, Spark Master
-10.22.7.20-21: HDFS Datanode, Spark Worker
-=====================================
+=========================
+xx.xx.7.19: HDFS Namenode, Spark Master
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xx.xx.7.20-21: HDFS Datanode, Spark Worker
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Bước 1: Tạo thư mục chứa các bộ cài đặt Spark, Hadoop, Conda, thay đổi quyền trong thư mục cho user bigdata: ::
 
@@ -27,8 +29,6 @@ Bước 4: Cài Conda, chú ý chọn thư mục cài /opt/bigdata/conda: ::
 Bước 5: Cài Python (chỉ định phiên bản 3.6 - ổn định): ::
 
     $conda install python=3.6
-
-Bước 6: Giải nén Spark, Hadoop
 
 .. toctree::
    :maxdepth: 2
