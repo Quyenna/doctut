@@ -1,0 +1,141 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Indices and tables &#8212; doctut 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <p>Spark &amp; HDFS install note
+10.22.7.19: HDFS Namenode, Spark Master
+10.22.7.20-21: HDFS Datanode, Spark Worker
+=====================================</p>
+<p>Bước 1: Tạo thư mục chứa các bộ cài đặt Spark, Hadoop, Conda, thay đổi quyền trong thư mục cho user bigdata:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ mkdir -p /opt/bigdata
+$ sudo chown -R bigdata:bigdata /opt/bigdata
+</pre></div>
+</div>
+<p>Bước 2: Tải Spark, Hadoop, Conda:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/opt/bigdata$ wget &quot;http://mirrors.viethosting.com/apache/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz&quot;
+/opt/bigdata$ wget &quot;http://mirrors.viethosting.com/apache/hadoop/common/hadoop-3.1.1/hadoop-3.1.1.tar.gz&quot;
+/opt/bigdata$ wget &quot;https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh&quot;
+</pre></div>
+</div>
+<p>Bước 3: Cài Java:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo add-apt-repository ppa:webupd8team/java
+$ sudo apt update
+$ sudo apt install oracle-java8-installer
+</pre></div>
+</div>
+<p>Bước 4: Cài Conda, chú ý chọn thư mục cài /opt/bigdata/conda:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/opt/bigdata$ bash Miniconda3-latest-Linux-x86_64.sh
+</pre></div>
+</div>
+<p>Bước 5: Cài Python (chỉ định phiên bản 3.6 - ổn định):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$conda install python=3.6
+</pre></div>
+</div>
+<p>Bước 6: Giải nén Spark, Hadoop</p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">doctut</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, quyenna.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
