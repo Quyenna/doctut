@@ -82,7 +82,7 @@ Bước 3: Thiết lập hostname, add ssh key giữa các node master <---> wor
     $ SPARK_HOME/sbin/start-all.sh
     $ HADOOP_HOME/sbin/start-dfs.sh
 
-3.4: Kiểm tra ứng tính khả dụng:
+3.4: Kiểm tra tính khả dụng:
     * Kiểm tra Web UI của Spark và Hadoop
     * Kiểm tra các port (defaut) 7077, 8020 của spark và hadoop đã binding trên ip public chưa (nếu binding trên IP 127.0.0.1 --> Các ứng dụng bên ngoài không gọi vào được)
 
